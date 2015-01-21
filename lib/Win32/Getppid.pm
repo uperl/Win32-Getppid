@@ -31,7 +31,18 @@ elsif($^O eq 'cygwin')
 else
 {
   @EXPORT_OK = qw( getppid );
-  *getppid = \&CORE::getppid;
+  if(eval q{ require 5.016 })
+  {
+    *getppid = \&CORE::getppid;
+  }
+  else
+  {
+    *getppid = sub {
+      package
+        Win32::Getppid::sandbox;
+      getppid();
+    };
+  }
 }
 
 =head1 SYNOPSIS
