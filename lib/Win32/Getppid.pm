@@ -2,6 +2,7 @@ package Win32::Getppid;
 
 use strict;
 use warnings;
+use 5.008001;
 use base qw( Exporter );
 
 BEGIN {
