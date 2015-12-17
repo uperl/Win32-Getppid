@@ -1,4 +1,4 @@
-# Win32::Getppid
+# Win32::Getppid [![Build Status](https://secure.travis-ci.org/plicease/Win32-Getppid.png)](http://travis-ci.org/plicease/Win32-Getppid)
 
 Implementation of getppid() for windows
 
