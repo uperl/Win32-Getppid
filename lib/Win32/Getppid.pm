@@ -24,6 +24,7 @@ our @EXPORT_OK;
 if($^O eq 'MSWin32')
 {
   @EXPORT = qw( getppid );
+  @EXPORT_OK = qw( getppid );
 }
 elsif($^O eq 'cygwin')
 {
