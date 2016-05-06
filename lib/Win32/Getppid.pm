@@ -10,7 +10,7 @@ BEGIN {
 # ABSTRACT: Implementation of getppid() for windows
 # VERSION
 
-  if($^O =~ /^(cygwin|MSWin32)$/)
+  if($^O =~ /^(cygwin|MSWin32|msys)$/)
   {
     require XSLoader;
     XSLoader::load('Win32::Getppid', $Win32::Getppid::VERSION);
@@ -26,7 +26,7 @@ if($^O eq 'MSWin32')
   @EXPORT = qw( getppid );
   @EXPORT_OK = qw( getppid );
 }
-elsif($^O eq 'cygwin')
+elsif($^O =~ /^(cygwin|msys)$/)
 {
   @EXPORT_OK = qw( getppid );
 }

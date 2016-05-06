@@ -9,7 +9,7 @@ sub new
 {
   my($class, %args) = @_;
   
-  if($^O =~ /^(cygwin|MSWin32)$/)
+  if($^O =~ /^(cygwin|MSWin32|msys)$/)
   {
     $args{include_dirs} = 'include';
   }

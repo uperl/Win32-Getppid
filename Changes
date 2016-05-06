@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  - Add support for MSYS2
 
 0.03      2016-05-06 07:59:21 -0400
 

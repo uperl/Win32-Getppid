@@ -3,7 +3,7 @@ use warnings;
 use Test::More;
 use Win32::Getppid;
 
-plan skip_all => 'cygwin only' unless $^O eq 'cygwin';
+plan skip_all => 'cygwin only' unless $^O =~ /^(cygwin|msys)$/;
 plan tests => 3;
 
 my $cygwin_ppid = getppid;
