@@ -33,7 +33,7 @@ elsif($^O =~ /^(cygwin|msys)$/)
 else
 {
   @EXPORT_OK = qw( getppid );
-  if(eval q{ require 5.016 })
+  if($] >= 5.016)
   {
     *getppid = \&CORE::getppid;
   }
