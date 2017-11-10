@@ -19,20 +19,19 @@ BEGIN {
 }
 
 our @EXPORT;
-our @EXPORT_OK;
+our @EXPORT_OK = qw( getppid );
 
 if($^O eq 'MSWin32')
 {
   @EXPORT = qw( getppid );
-  @EXPORT_OK = qw( getppid );
 }
 elsif($^O =~ /^(cygwin|msys)$/)
 {
-  @EXPORT_OK = qw( getppid );
+  # Allow import, but not by default
+  # on cygwin/msys
 }
 else
 {
-  @EXPORT_OK = qw( getppid );
   if($] >= 5.016)
   {
     *getppid = \&CORE::getppid;
