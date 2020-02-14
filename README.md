@@ -4,9 +4,11 @@ Implementation of getppid() for windows
 
 # SYNOPSIS
 
-    use Win32::Getppid;
-    
-    my $parent_pid = getppid;
+```perl
+use Win32::Getppid;
+
+my $parent_pid = getppid;
+```
 
 # DESCRIPTION
 
@@ -24,7 +26,9 @@ default only in a real Windows environment (`$^O eq 'MSWin32'`).  On Cygwin
 getppid returns the cygwin parent process, for the real windows parent
 process id on cygwin you can use the fully qualified version:
 
-    my $windows_ppid = Win32::Getppid::getppid();
+```perl
+my $windows_ppid = Win32::Getppid::getppid();
+```
 
 # AUTHOR
 
