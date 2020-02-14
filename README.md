@@ -1,12 +1,14 @@
-# Win32::Getppid [![Build Status](https://secure.travis-ci.org/plicease/Win32-Getppid.png)](http://travis-ci.org/plicease/Win32-Getppid)
+# Win32::Getppid [![Build Status](https://secure.travis-ci.org/plicease/Win32-Getppid.png)](http://travis-ci.org/plicease/Win32-Getppid) ![macos](https://github.com/plicease/Win32-Getppid/workflows/macos/badge.svg) ![windows](https://github.com/plicease/Win32-Getppid/workflows/windows/badge.svg)
 
 Implementation of getppid() for windows
 
 # SYNOPSIS
 
-    use Win32::Getppid;
-    
-    my $parent_pid = getppid;
+```perl
+use Win32::Getppid;
+
+my $parent_pid = getppid;
+```
 
 # DESCRIPTION
 
@@ -24,7 +26,9 @@ default only in a real Windows environment (`$^O eq 'MSWin32'`).  On Cygwin
 getppid returns the cygwin parent process, for the real windows parent
 process id on cygwin you can use the fully qualified version:
 
-    my $windows_ppid = Win32::Getppid::getppid();
+```perl
+my $windows_ppid = Win32::Getppid::getppid();
+```
 
 # AUTHOR
 
