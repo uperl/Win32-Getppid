@@ -1,4 +1,4 @@
-# Win32::Getppid [![Build Status](https://secure.travis-ci.org/plicease/Win32-Getppid.png)](http://travis-ci.org/plicease/Win32-Getppid) ![macos](https://github.com/plicease/Win32-Getppid/workflows/macos/badge.svg) ![windows](https://github.com/plicease/Win32-Getppid/workflows/windows/badge.svg)
+# Win32::Getppid ![linux](https://github.com/uperl/Win32-Getppid/workflows/linux/badge.svg) ![macos](https://github.com/uperl/Win32-Getppid/workflows/macos/badge.svg) ![windows](https://github.com/uperl/Win32-Getppid/workflows/windows/badge.svg) ![cygwin](https://github.com/uperl/Win32-Getppid/workflows/cygwin/badge.svg) ![msys2-mingw](https://github.com/uperl/Win32-Getppid/workflows/msys2-mingw/badge.svg)
 
 Implementation of getppid() for windows
 
