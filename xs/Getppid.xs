@@ -38,6 +38,8 @@ getppid()
       }
     }
 
+    CloseHandle(snapshot);
+
     if(!found)
       croak("Unable to find parent process");
 
