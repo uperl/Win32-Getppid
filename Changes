@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  - Close handle to avoid leaking it (gh#6, gh#7)
 
 0.05      2017-08-31 13:24:45 -0400
   - Migrate to EUMM
