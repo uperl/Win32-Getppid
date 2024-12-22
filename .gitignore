@@ -1,2 +1,4 @@
 /Win32-Getppid-*
 /.build
+*.old
+*.orig
