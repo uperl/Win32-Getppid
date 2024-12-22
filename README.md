@@ -1,4 +1,4 @@
-# Win32::Getppid ![linux](https://github.com/uperl/Win32-Getppid/workflows/linux/badge.svg) ![macos](https://github.com/uperl/Win32-Getppid/workflows/macos/badge.svg) ![windows](https://github.com/uperl/Win32-Getppid/workflows/windows/badge.svg) ![msys2-mingw](https://github.com/uperl/Win32-Getppid/workflows/msys2-mingw/badge.svg)
+# Win32::Getppid ![linux](https://github.com/uperl/Win32-Getppid/workflows/linux/badge.svg) ![macos](https://github.com/uperl/Win32-Getppid/workflows/macos/badge.svg) ![windows](https://github.com/uperl/Win32-Getppid/workflows/windows/badge.svg)
 
 Implementation of getppid() for windows
 
